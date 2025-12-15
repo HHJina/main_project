@@ -1,0 +1,51 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+#joinButton {
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.theme-switch {
+    float: right;
+}
+
+/* 다크모드 */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: grey;
+    color: #e0e0e0;
+}
+
+.dark-mode #product_data_Table tr {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .page-link {
+    background-color: #333;
+    color: #ccc;
+    border-color: #555;
+}
+
+.dark-mode .page-link:hover {
+    background-color: #555;
+}
+
+.dark-mode .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.dark-mode input,
+.dark-mode select {
+    background-color: #333;
+    color: #ccc;
+}

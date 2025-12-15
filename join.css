@@ -1,0 +1,83 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.table th,
+.table td {
+  border-top: 1px solid #dee2e6;
+  transition: border-color 0.3s;
+}
+
+.table th {
+  width: 30%;
+  background-color: #e9ecef;
+  transition: background-color 0.3s;
+}
+
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.centered-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 다크 모드 */
+
+body.dark-mode {
+  background-color: grey;
+  color: #e0e0e0;
+}
+
+body.dark-mode .container {
+  background-color: grey;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .table {
+  color: #e0e0e0;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+  border-color: #444444;
+  color: white;
+}
+
+body.dark-mode .table th {
+  background-color: #6a6868;
+}
+
+body.dark-mode .form-control {
+  background-color: grey;
+  color: #e0e0e0;
+  border-color: #555555;
+}
+
+body.dark-mode .form-control:focus {
+  background-color: #333333;
+  color: #e0e0e0;
+  border-color: #888888;
+  box-shadow: 0 0 0 0.25rem rgba(140, 140, 140, 0.25);
+}
+
+/* 라디오 버튼/체크박스 라벨 색상 */
+body.dark-mode .form-check-label {
+  color: black
+}

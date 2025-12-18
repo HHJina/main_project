@@ -117,6 +117,8 @@ def extract_product_info(soup, category):
         
         save_to_db(category, brand, product_name, price)
 
+    print(f"{category} : 총 {len(items)}")
+
 def main():
     create_table()
     categories = ["상의", "하의", "신발", "패션잡화"]
